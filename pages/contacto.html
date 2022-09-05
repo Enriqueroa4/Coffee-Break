@@ -30,36 +30,31 @@
     </nav>
   </header>
   <main>
-    <form class="form" action="" method="GET" enctype="multipart/form-data">
-      <fieldset class="form-user">
-        <legend>Usuario</legend>
-        <label>Nombre</label>
-        <input type="text" placeholder="Nombre">
-        <label>Contraseña</label>
-        <input type="password" placeholder="Contraseña" name="" id="">
-      </fieldset>
-
-      <fieldset class="datos-articulos">
-        <legend>Datos del Artículo</legend>
-        <input type="file">
-        <label for="check">Checkbox</label>
-        <span>Opcion 1</span>
-        <input type="checkbox" value="Option1">
-        <label>Radio</label>
-        <input type="radio" value="Option1">
-      </fieldset>
-
-      <fieldset class="datos-envio">
-        <legend>Datos del Envio</legend>
-        <label>Comentario:</label>
-        <textarea cols="30" rows="10" placeholder="Escribe aqui"></textarea>
-      </fieldset>
-      <input class="enviar" type="submit" value="Enviar">
-      <input class="vaciar" type="reset" value="Vaciar">
-      <input class="button" type="button" value="Button">
-    </form>
+    <section class="container-contacto">
+      <form class="contacto">
+        <h2 class="form-titulo">Inicia Sesión</h2>
+        <p class="form-parrafo">¿Aún no tienes una cuenta? <a href="#" class="form-link">Entra aquí</a></p>
+        <div class="form-container">
+          <div class="form-group">
+            <input type="text" id="name" class="form-input" placeholder=" ">
+            <label for="name" class="form-label">Nombre:</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="user" class="form-input" placeholder=" ">
+            <label for="user" class="form-label">Usuario:</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="password" class="form-input" placeholder=" ">
+            <label for="password" class="form-label">Contraseña:</label>
+            <span class="form-line"></span>
+          </div>
+          <input type="submit" class="form-submit" value="Entrar">
+        </div>
+      </form>
+    </section>
   </main>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <footer>
     <p>Todos los derechos reservados a Coffee Break </p>
