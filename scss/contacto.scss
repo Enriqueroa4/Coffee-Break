@@ -1,0 +1,106 @@
+/*main-contacto*/
+
+.container-contacto {
+  display: flex;
+  min-height: 100vh;
+  background-image: url(../img/coffee-shop.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contacto {
+  background-color: #dad6d6;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px black;
+  text-align: center;
+}
+
+.form-titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.form-parrafo {
+  font-weight: 300;
+}
+
+.form-link {
+  font-weight: 400;
+  color: #895737;
+}
+
+.form-container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+
+.form-group {
+  position: relative;
+  --color: #5757577e;
+}
+
+.form-input {
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #895737;
+}
+
+.form-label {
+  color: #2c2c2c;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+
+.form-submit {
+  background-color: #895737;
+  color: #dad6d6;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.form-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #895737;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
+}
+
+.form-input:focus ~ .form-line,
+.form-input:not(:placeholder-shown) ~ .form-line {
+  transform: scale(1);
+}
+
+@media (max-width: 425px) {
+  .form-titulo {
+    font-size: 1.8rem;
+  }
+}

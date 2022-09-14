@@ -1,0 +1,71 @@
+/*main-nosotros*/
+
+.container-introduction {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 1000px;
+  height: 650px;
+}
+
+.container-grid {
+  width: 100%;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+}
+
+.container-grid .box-img figure {
+  width: 100%;
+  height: 100%;
+}
+
+.container-grid .box-img img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.box-img:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.container-grid .box-img:nth-child(1) {
+  grid-column-start: span 2;
+}
+
+.container-grid .box-img:nth-child(4) {
+  grid-row-start: span 2;
+}
+
+/*media-seccion nosotros*/
+
+@media screen and (max-width: 800px) {
+  .container-grid {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px;
+  }
+  .container-grid .box-img:nth-child(1) {
+    grid-column-start: span 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-grid {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-img .box-img img {
+    height: 200px;
+  }
+}
