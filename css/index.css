@@ -70,6 +70,12 @@ footer {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 /*main-servicios*/
+.encabezado-servicios {
+  color: #dad6d6;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
 /*espresso*/
 .espresso-container {
   display: flex;
@@ -204,6 +210,11 @@ footer {
   padding-left: 20px; }
 
 /*main-nosotros*/
+.encabezado-galeria {
+  color: #dad6d6;
+  text-align: center;
+  margin-bottom: 16px; }
+
 .container-introduction {
   display: flex;
   justify-content: center;
