@@ -77,7 +77,7 @@ footer {
   margin-bottom: 16px; }
 
 /*espresso*/
-.espresso-container {
+.espresso-container, .americano-container, .moca-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,7 @@ footer {
   margin-bottom: 10px; }
 
 /*capuchino*/
-.capuchino-container {
+.capuchino-container, .latte-container, .machiatto-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,13 +122,6 @@ footer {
   padding-left: 20px; }
 
 /*Americano*/
-.americano-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  margin-bottom: 180px; }
-
 .americano {
   width: 520px;
   height: 400px;
@@ -143,14 +136,6 @@ footer {
   padding-left: 20px; }
 
 /*Latte*/
-.latte-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding: 30px;
-  margin-bottom: 180px; }
-
 .latte {
   width: 520px;
   height: 420px;
@@ -166,13 +151,6 @@ footer {
   padding-left: 20px; }
 
 /*Moca*/
-.moca-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  margin-bottom: 180px; }
-
 .moca {
   width: 570px;
   height: 400px;
@@ -187,14 +165,6 @@ footer {
   padding-left: 20px; }
 
 /*machiatto*/
-.machiatto-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding: 30px;
-  margin-bottom: 180px; }
-
 .machiatto {
   width: 520px;
   height: 380px;
