@@ -65,11 +65,7 @@
 /*Americano*/
 
 .americano-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  margin-bottom: 180px;
+  @extend .espresso-container;
 }
 
 .americano {
@@ -91,12 +87,7 @@
 /*Latte*/
 
 .latte-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding: 30px;
-  margin-bottom: 180px;
+  @extend .capuchino-container;
 }
 
 .latte {
@@ -119,11 +110,7 @@
 /*Moca*/
 
 .moca-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  margin-bottom: 180px;
+  @extend .espresso-container;
 }
 
 .moca {
@@ -145,12 +132,7 @@
 /*machiatto*/
 
 .machiatto-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding: 30px;
-  margin-bottom: 180px;
+  @extend .capuchino-container;
 }
 
 .machiatto {
